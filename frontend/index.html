@@ -1,0 +1,36 @@
+// === frontend/index.html ===
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadiOn - Dinlə</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎧 RadiOn</h1>
+
+    <div id="register-section">
+      <input type="text" id="client-name" placeholder="Butik adını daxil et">
+      <button onclick="registerClient()">Daxil ol</button>
+    </div>
+
+    <div id="player-section" style="display:none;">
+      <h2 id="welcome"></h2>
+      <ul id="music-list"></ul>
+
+      <div class="controls">
+        <button onclick="prevTrack()">⏮</button>
+        <button onclick="togglePlay()" id="play-btn">▶️</button>
+        <button onclick="nextTrack()">⏭</button>
+      </div>
+
+      <audio id="audio" src="" controls style="width:100%; margin-top:10px;"></audio>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
